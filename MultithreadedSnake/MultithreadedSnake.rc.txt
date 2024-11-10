@@ -1,0 +1,1 @@
+allegro_icon            ICON                    "graphics\\logo_snake.ico"
