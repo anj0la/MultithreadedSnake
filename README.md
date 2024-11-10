@@ -1,16 +1,17 @@
-# MultithreadedSnake
+<div align="center">
+    <img src="MultithreadedSnake/graphics/logo_snake.png" alt="Screenshot of the logo" width="200">
+</div>
 
-This repository consists of the code that was used to create a multi-threaded snake game. 
-In the snake game, a player controls the snake's head, and must move it using the up, down, left and right arrow keys. If the snake's 
-head collides with any part of the snake's body, or the borders of the game board, the game is over. The snake grows by eating an apple
-that randomly spawns in some position of the board.
+# Multithreaded Snake Game
 
-## Gameplay (x4 speedup)
-https://user-images.githubusercontent.com/92893114/232644836-76db4140-bb54-4749-aa9a-d27cf813c6af.mp4
+In Snake, the player controls a snake moving around the game board. Using the arrow keys, the objective is to navigate the snake to eat randomly spawning apples, which cause it to grow with each bite. As the snake grows longer, maneuvering becomes more challenging. The game ends if the snake's head collides with its own body or the board's edge. 
+## Game Screenshot
+
+<img width="595" alt="snake_gameplay_screenshot" src="https://github.com/user-attachments/assets/dda50645-fc18-43d7-b908-4680df74d96a">
 
 ## Language & Libraries
 - Made with C/C++
-- Includes the Allegro 4.4.2 library (a game library for C/C++ programming and includes DirectX and OpenGL to support it)
+- Includes the Allegro 4.4.2 library (a game library for C/C++ programming utilizing DirectX and OpenGL)
 - Includes the Pthreads library for Windows
 
 ## Multithreaded Aspects
@@ -23,3 +24,8 @@ https://user-images.githubusercontent.com/92893114/232644836-76db4140-bb54-4749-
 - Background music provided by Pixabay: https://pixabay.com/music/video-games-chiptune-grooving-142242/
 - Apple crunch sound by Koops: https://freesound.org/s/20279/
 - End game sound provided by Pixabay: https://pixabay.com/sound-effects/videogame-death-sound-43894/
+
+## Known Bugs
+- If you change to another screen, the music starts to repeat itself.
+- Sometimes, the game will crash when trying to exit the game.
+  
