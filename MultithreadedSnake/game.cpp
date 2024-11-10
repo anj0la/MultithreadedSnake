@@ -2,7 +2,7 @@
 * File: game.cpp
 *
 * Author: Anjola Aina
-* Last Modified: Thursday, April 13th, 2023
+* Last Modified: Sunday, November 10th, 2024
 *
 * This file implements the game_state class.
 */
@@ -171,20 +171,20 @@ Cell* Game_State::get_next_cell(Cell* curr_position) {
 	int row = curr_position->get_row();
 	int col = curr_position->get_col();
 	switch (dir) {
-		case LEFT:
-			col--;
-			break;
-		case RIGHT:
-			col++;
-			break;
-		case UP:
-			row--;
-			break;
-		case DOWN:
-			row++;
-			break;
+	case LEFT:
+		col--;
+		break;
+	case RIGHT:
+		col++;
+		break;
+	case UP:
+		row--;
+		break;
+	case DOWN:
+		row++;
+		break;
 	}
-	if (is_snake_out_of_bounds(row, col)) {  
+	if (is_snake_out_of_bounds(row, col)) {
 		return NULL;
 	}
 	Cell* next_cell = game_board->get_specific_cell(row, col);
@@ -297,7 +297,6 @@ void Game_State::draw_game_board() {
 			swap_colour = true;
 		}
 	} // outer for
-	textout_right_ex(buffer, font, "Made for AUCSC 450 Winter 2023", WIDTH - 20, HEIGHT - 15, WHITE, -1);
 	textprintf_ex(buffer, game_font, 25, 25, WHITE, -1, "Score: %d", total_score);
 	textout_right_ex(buffer, game_font, "Stop - ESC", WIDTH - 25, 25, WHITE, -1);
 	if ((timer / FPS) % FPS < 10) {
@@ -333,20 +332,20 @@ Draws the snake's face, depending on what direction the snake is currently going
 */
 void Game_State::draw_snake_face(int x_pos, int y_pos) {
 	switch (dir) {
-		case LEFT:
-			draw_face_left(x_pos, y_pos);
-			break;
-		case RIGHT:
-			draw_face_right(x_pos, y_pos);
-			break;
-		case UP:
-			draw_face_up(x_pos, y_pos);
-			break;
-		case DOWN:
-			draw_face_down(x_pos, y_pos);
-			break;
-		case NONE:
-			draw_face_up(x_pos, y_pos);
+	case LEFT:
+		draw_face_left(x_pos, y_pos);
+		break;
+	case RIGHT:
+		draw_face_right(x_pos, y_pos);
+		break;
+	case UP:
+		draw_face_up(x_pos, y_pos);
+		break;
+	case DOWN:
+		draw_face_down(x_pos, y_pos);
+		break;
+	case NONE:
+		draw_face_up(x_pos, y_pos);
 	}
 } // draw_snake_front
 
@@ -563,8 +562,8 @@ void* Game_State::end_game(void* args) {
 	while (!game_over) {
 		if (key[KEY_ESC]) {
 			game_over = true;
-			return (void*) true;
+			return (void*)true;
 		}
 	} // while
-	return (void*) false; 
+	return (void*)false;
 } // end_game

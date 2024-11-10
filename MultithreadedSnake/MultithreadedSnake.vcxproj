@@ -156,7 +156,6 @@
     <ClInclude Include="node.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
     <ClInclude Include="snake.h" />
   </ItemGroup>
   <ItemGroup>

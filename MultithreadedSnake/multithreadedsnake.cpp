@@ -16,7 +16,7 @@ int main(void) {
 	if (allegro_init() != 0) {
 		return 1;
 	}
-	set_window_title("Multithreaded Snake");
+	set_window_title("Snake Game");
 	set_color_depth(24);
 	install_keyboard();
 	set_keyboard_rate(10000, 0);
@@ -33,8 +33,6 @@ int main(void) {
 	Game_State* game_state_t = new Game_State();
 	game_state_t->start_game();
 	
-	//textout_right_ex(screen, font, "Made by Anjola Aina", WIDTH - 20, HEIGHT - 15, WHITE, -1);
-	//while (!key[KEY_ESC]); // wait until the ESC key is pressed to do anything (busy waiting loop)
 	allegro_exit();
 	return 0;
 }
