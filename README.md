@@ -13,8 +13,7 @@ The game will remain in the **alpha** stage indefinitely, created as part of my 
 <img width="595" alt="snake_gameplay_screenshot" src="https://github.com/user-attachments/assets/dda50645-fc18-43d7-b908-4680df74d96a">
 
 ## Download the Game
-Available under the "Releases" category with the tag "1.0.0-alpha".
-
+Available via the following game page: https://anj0la.itch.io/multithreaded-snake-game
 
 ## Language & Libraries
 - Made with C/C++
