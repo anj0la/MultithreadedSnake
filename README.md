@@ -5,9 +5,16 @@
 # Multithreaded Snake Game
 
 In Snake, the player controls a snake moving around the game board. Using the arrow keys, the objective is to navigate the snake to eat randomly spawning apples, which cause it to grow with each bite. As the snake grows longer, maneuvering becomes more challenging. The game ends if the snake's head collides with its own body or the board's edge. 
+
+The game will remain in the **alpha** stage indefinitely, created as part of my parallel programming class. It marks my first attempt at developing a game in just two weeks, with no plans for beta testing.
+
 ## Game Screenshot
 
 <img width="595" alt="snake_gameplay_screenshot" src="https://github.com/user-attachments/assets/dda50645-fc18-43d7-b908-4680df74d96a">
+
+## Download the Game
+Available under the "Releases" category with the tag "1.0.0-alpha".
+
 
 ## Language & Libraries
 - Made with C/C++
